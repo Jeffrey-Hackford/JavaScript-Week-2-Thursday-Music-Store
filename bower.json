@@ -1,9 +1,9 @@
 {
-  "name": "ping-pong",
+  "name": "toDOAngular",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/LATAEVIA/Node-Ping-Pong",
+  "homepage": "https://github.com/droycho/angularToDo.git",
   "moduleType": [],
   "ignore": [
     "**/.*",

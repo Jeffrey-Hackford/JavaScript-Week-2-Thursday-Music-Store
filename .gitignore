@@ -43,7 +43,10 @@ build/
 # Node #
 ########
 node_modules/
-build/
-tmp/
+npm-debug.log
 bower_components/
-.env
+app/*.js
+app/*.js.map
+.DS_Store
+build/
+typings/
