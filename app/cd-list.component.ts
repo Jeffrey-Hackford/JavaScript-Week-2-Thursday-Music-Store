@@ -1,4 +1,5 @@
 import { Component, EventEmitter } from 'angular2/core';
+import { EditCdDetailsComponent } from './edit-cd-details.components';
 import { CdComponent } from './cd.component';
 import { Cd } from './cd.model';
 
@@ -7,7 +8,7 @@ import { Cd } from './cd.model';
   selector: 'cd-list',
   inputs: ['cdList'],
   outputs: ['onCdSelect'],
-  directives: [CdComponent],
+  directives: [CdComponent, EditCdDetailsComponent],
   templateUrl: 'app/urls/cd-list.component.html'
 })
 

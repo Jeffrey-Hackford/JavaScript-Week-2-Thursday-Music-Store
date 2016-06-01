@@ -1,5 +1,7 @@
-  <cd-display *ngFor="#currentCd of cdList"
-    (click)="cdClicked(currentCd)"
-    [class.selected]="currentCd === slectedCd"
-    [cd]="currentCd">
-  </cd-display>
+<cd-display *ngFor="#currentCd of cdList"
+  (click)="cdClicked(currentCd)"
+  [class.selected]="currentCd === selectedCd"
+  [cd]="currentCd">
+</cd-display>
+<edit-cd-details *ngIf="selectedCd" [cd]="selectedCd">
+</edit-cd-details>

@@ -5,9 +5,8 @@ import { Cd } from './cd.model';
   selector: 'cd-display',
   inputs: ['cd'],
   templateUrl:'app/urls/cd.component.html'
-
-
 })
+
 export class CdComponent {
   public cd: Cd;
 }
