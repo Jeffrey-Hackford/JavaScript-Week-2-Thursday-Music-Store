@@ -117,10 +117,29 @@ gulp.task('tsBuild', ['ts'], function(){
 });
 
 ////////////////////// GLOBAL BUILD TASK //////////////////////
+gulp.task('build', ['jsBuild', 'tsBuild', "cssBuild"], function(){
 
+});
 // global build task with individual clean tasks as dependencies.
-gulp.task('build', ['ts'], function(){
+gulp.task('default', ['build'], function(){
   // we can use the buildProduction environment variable here later.
   gulp.start('bower');
   gulp.start('sassBuild');
+  gulp.start('serve');
 });
+
+////////////////////// SETUP NOTES //////////////////////
+
+/*
+- clone repo
+- npm install
+- bower install
+- install globals if needed (gulp, bower, sass, typescript, typescript packages.)
+  - npm install gulp -g
+  - npm install bower -g
+  - gem install sass
+  - npm install typescript -g
+  - apm install atom-typescript
+- gulp build
+- gulp serve
+*/

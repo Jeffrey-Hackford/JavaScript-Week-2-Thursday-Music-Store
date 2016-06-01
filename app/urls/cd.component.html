@@ -1,2 +1,6 @@
-<h2>{{ cd.artist }}: {{ cd.album }}</h2>
-<h3>price: ${{ cd.cost }}.00</h3>
+<div class="album">
+  <h2 class="album-contents album-title">{{ cd.album }}</h2>
+  <h3 class="album-contents">Artist: {{ cd.artist }}</h3>
+  <h3 class="album-contents">Genera: {{ cd.genera }}</h3>
+  <h3 class="album-contents">price: <span class="price">${{ cd.cost }}</span></h3>
+</div>

@@ -1,7 +1,82 @@
-h1 {
+.heading {
   color: red;
+  text-align: center;
 }
 
 .selected {
   color: #22bdf0;
+  border-color: #f00e46;
+}
+
+.album{
+  background-color: #eee;
+  border-color: #22bdf0;
+  border-width: 5px;
+  border-style: inset;
+  border-radius: 30px;
+  width: auto;
+  float: left;
+  height: auto;
+  margin: 15px;
+  margin-left: 35px;
+}
+ .album-contents{
+   margin-left: 25px;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   width: 80%;
+ }
+
+.album-title{
+  margin-right: auto;
+  margin-left: 60px;
+}
+
+.price{
+  font-weight: bold;
+  font-style: italic;
+  color: red;
+}
+
+.cd-form{
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 50%;
+}
+.display{
+  margin-top: 16%;
+}
+.display:hover{
+  cursor: pointer;
+}
+.add-button{
+  height: 145px;
+  background-color: #22bdf0;
+  border-color: #22bdf0;
+  color: #eee;
+}
+.add-button:hover{
+  height: 145px;
+  background-color: #51d1fb;
+  border-color: #22bdf0;
+}
+.userIn{
+  margin-top: 2px;
+  margin-right: 2px;
+  border-color: #22bdf0;
+}
+.new{
+  margin-top: 50px;
+}
+
+.cd-edit-form{
+  margin-left: 10%;
+  margin-right: 50%;
+  width: 80%;
+  border-color: #22bdf0;
+}
+.edit-head{
+  margin-left: 10%;
+  margin-right: 50%;
+  width: 80%;
 }

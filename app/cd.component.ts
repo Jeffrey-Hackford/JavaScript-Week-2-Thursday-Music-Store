@@ -9,4 +9,7 @@ import { Cd } from './cd.model';
 
 export class CdComponent {
   public cd: Cd;
+  togglePurchased(setState: boolean){
+    this.cd.purchased = setState;
+  }
 }

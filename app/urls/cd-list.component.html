@@ -1,7 +1,17 @@
-<cd-display *ngFor="#currentCd of cdList"
-  (click)="cdClicked(currentCd)"
-  [class.selected]="currentCd === selectedCd"
-  [cd]="currentCd">
-</cd-display>
+<select (change)="onChange($event.target.value)">
+  <option value="all">Show All</option>
+  <option value="purchased">Show purchased</option>
+  <option value="notPurchased">Show not purchased</option>
+</select>
+<div class="new">
+  <new-cd (onSubmitNewCd)="createCd($event)"></new-cd>
+</div>
 <edit-cd-details *ngIf="selectedCd" [cd]="selectedCd">
 </edit-cd-details>
+<div class="display">
+  <cd-display *ngFor="#currentCd of cdList | puchased:filterPurchased:selectedCd"
+    (click)="cdClicked(currentCd)"
+    [class.selected]="currentCd === selectedCd"
+    [cd]="currentCd">
+  </cd-display>
+</div>

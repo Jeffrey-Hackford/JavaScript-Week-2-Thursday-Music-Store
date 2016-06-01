@@ -2,10 +2,13 @@ import {Component} from 'angular2/core';
 import {Cd} from './cd.model';
 
 @Component({
-  selector: 'edit-task-details',
+  selector: 'edit-cd-details',
   inputs: ['cd'],
   template: `
-    <h3>Edit cost: {{ cd.cost }}</h3>
+  <div class="cd-edit-form col-sm-8 input-lg userIn">
+    <h3 class="edit-head">Edit Cost</h3>
+    <input [(ngModel)]="cd.cost" class="col-sm-8 input-lg cd-edit-form" type="number" step=".01">
+  </div>
 `
 })
 export class EditCdDetailsComponent {
