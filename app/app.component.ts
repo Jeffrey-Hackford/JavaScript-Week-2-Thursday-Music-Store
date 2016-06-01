@@ -1,29 +1,22 @@
-import { Component, EventEmitter } from 'angular2/core';
-import { TaskListComponent } from './task-list.component';
-import { Task } from './task.model';
+import { Component } from 'angular2/core';
+import { CdListComponent } from './cd-list.component';
+import { Cd } from './cd.model';
 
 @Component({
   selector: 'my-app',
-  directives: [TaskListComponent],
-  template: `
-  <div class="container">
-  <h1>To-Do List</h1>
-  <task-list [taskList]="tasks" (onTaskSelect)="taskWasSelected($event)"></task-list>
-  </div>
-  `
+  directives: [CdListComponent],
+  templateUrl: 'app/urls/app.component.html'
+
 })
 
 export class AppComponent {
-  public tasks: Task[];
+  public cds: Cd[];
   constructor(){
-    this.tasks = [
-      new Task("Create To-Do List app.", 0),
-      new Task("Learn Kung Fu.", 1),
-      new Task("Rewatch all the Lord of the Rings movies.", 2),
-      new Task("Do the laundry.", 3)
+    this.cds = [
+      new Cd("Word", "Here", 3.00, 0)
     ];
   }
-  taskWasSelected(clickedTask: Task): void {
-    console.log('parent', clickedTask);
+  cdWasSelected(clickedCd: Cd): void{
+    console.log('parent', clickedCd);
   }
 }
