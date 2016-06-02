@@ -1,6 +1,7 @@
 import { Component } from 'angular2/core';
 import { CdListComponent } from './cd-list.component';
 import { Cd } from './cd.model';
+import { finalPrice } from './cd-list.component';
 
 @Component({
   selector: 'my-app',

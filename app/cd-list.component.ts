@@ -6,7 +6,7 @@ import { Cd } from './cd.model';
 import { PurchasedPipe } from './purchased.pipe';
 import { totalPrice } from './cd.component';
 console.log("test", totalPrice);
-var finalPrice = 0;
+export var finalPrice: number = 0;
 
 @Component({
   selector: 'cd-list',

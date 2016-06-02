@@ -8,7 +8,17 @@ body {
 h2 {
     font-size: 1.5vw;
 }
-
+.finalPrice {
+  color: white;
+  margin-top: 70px;
+  margin-bottom: -165px;
+  text-align: center;
+  background-color: black;
+  padding-left: -200px;
+  margin-left: 31%;
+  max-width: 350px;
+  border-radius: 30px;
+}
 .heading {
   min-width: 100%;
   min-height: 50px;
