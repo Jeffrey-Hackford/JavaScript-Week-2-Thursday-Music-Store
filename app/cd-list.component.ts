@@ -24,7 +24,7 @@ export class CdListComponent {
     this.onCdSelect = new EventEmitter();
   }
 
-  cdClicked(clickedCd: Cd): void{
+  cdClicked(clickedCd: Cd): void {
     console.log('child', clickedCd);
     this.selectedCd = clickedCd;
     this.onCdSelect.emit(clickedCd);

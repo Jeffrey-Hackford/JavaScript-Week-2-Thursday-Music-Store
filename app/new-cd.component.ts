@@ -9,7 +9,8 @@ import {Cd} from './cd.model';
     <input placeholder="Title" class="col-sm-8 input-lg userIn" #newTitle>
     <input placeholder="Artist" class="col-sm-8 input-lg userIn" #newArtist>
     <input placeholder="Genera" class="col-sm-8 input-lg userIn" #newGenera>
-    <button (click)="addCd(newTitle, newArtist, newGenera)" class="btn-lg add-button">Get</button>
+    <input placeholder="Cost" class="col-sm-8 input-lg userIn" #price>
+    <button (click)="addCd(newTitle, newArtist, newGenera, price)" class="btn-lg add-button">Get</button>
   </div>
   `
 })
@@ -18,14 +19,15 @@ export class NewCdComponent {
   constructor(){
     this.onSubmitNewCd = new EventEmitter();
   }
-  addCd(inputTitle: HTMLInputElement, inputArtist: HTMLInputElement, inputGenera: HTMLInputElement){
+  addCd(inputTitle: HTMLInputElement, inputArtist: HTMLInputElement, inputGenera: HTMLInputElement, inputPrice: HTMLInputElement){
     // debugger;
 
-    var newCd = new Cd(inputTitle.value, inputArtist.value, 0, 0, inputGenera.value);
+    var newCd = new Cd(inputTitle.value, inputArtist.value, inputGenera.value, inputPrice.value, 0);
     this.onSubmitNewCd.emit(newCd);
     inputTitle.value = "";
     inputArtist.value = "";
     inputGenera.value = "";
+    inputPrice.value = "";
 
     var pattern="[a-zA-Z0-9].*$";
   }

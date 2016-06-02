@@ -1,24 +1,22 @@
 import { Pipe, PipeTransform } from 'angular2/core';
 import { Cd } from './cd.model';
-var purchased = [];
 
 
-@Pipe ({
+@Pipe({
   name: "purchased",
   pure: false
 })
-
 export class PurchasedPipe implements PipeTransform {
   transform(input: Cd[], args) {
-    var bought = args[0];
-    if(bought === "purchased") {
-      return input.filter(function(cd) {
-        purchased.push(input);
-        console.log(purchased);
+    console.log('selected cd: ', args[1]);
+    var purchased = args[0];
+    if(purchased === "purchased") {
+      return input.filter((cd) => {
+        return cd.purchased;
       });
-    } else if (bought === "notPurchased") {
-      return input.filter(function(cd) {
-        return cd.purchased
+    } else if (purchased === "notPurchased") {
+      return input.filter((cd) => {
+        return !cd.purchased;
       });
     } else {
       return input;

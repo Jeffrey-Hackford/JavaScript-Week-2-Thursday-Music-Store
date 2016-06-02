@@ -1,6 +1,6 @@
 export class Cd {
   public purchased: boolean = false;
-  constructor(public album: string, public artist: string, public cost: number, public id: number, public genera: string) {
+  constructor(public album: string, public artist: string, public genera: string, public cost: string, public id: number) {
 
   }
 }

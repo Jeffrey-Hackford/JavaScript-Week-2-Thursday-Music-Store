@@ -1,7 +1,31 @@
-.heading {
-  color: red;
-  text-align: center;
+body {
+  background-image: url("http://thefusionmag.com/wp-content/uploads/2013/04/vinyl_love_by_breath_defying-d37ys3u.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+.heading {
+  min-width: 100%;
+  min-height: 50px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 22px;
+  color: black;
+  text-align: center;
+  background: lightgray;
+  border-radius: 0px 0px 100px 100px;
+  font-family: 'Poiret One', cursive;
+}
+/*.jumbotron{
+  width: 100%;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}*/
 
 .selected {
   color: #22bdf0;
@@ -9,7 +33,7 @@
 }
 
 .album{
-  background-color: #eee;
+  background-color: #959595;
   border-color: #22bdf0;
   border-width: 5px;
   border-style: inset;
@@ -19,6 +43,15 @@
   height: auto;
   margin: 15px;
   margin-left: 35px;
+  max-width: 225px;
+  max-height: 260px;
+  min-width: 225px;
+  min-height: 260px;
+  background-image: url("http://icons.iconseeker.com/png/fullsize/vinyl-record-icons/vinyl-turquoise-512.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 2vw;
 }
  .album-contents{
    margin-left: 25px;
@@ -50,13 +83,14 @@
   cursor: pointer;
 }
 .add-button{
-  height: 145px;
+  margin-top: 2px;
+  height: 191px;
   background-color: #22bdf0;
   border-color: #22bdf0;
   color: #eee;
 }
 .add-button:hover{
-  height: 145px;
+  height: 191px;
   background-color: #51d1fb;
   border-color: #22bdf0;
 }
@@ -79,4 +113,34 @@
   margin-left: 10%;
   margin-right: 50%;
   width: 80%;
+  color: white;
+}
+
+.checkbox1 {
+  margin-left: 35px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.col-xl-2 {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.dropMenu{
+  margin-left: 20.85%;
+  width: 673px;
+  font-size: 35px;
+  border-color: #22bdf0;
+  border-width: 2px;
+  border-style: inset;
+  margin-bottom: -49px;
+  background-color: #fff;
+}
+
+.titleOpage{
+  font-size: 80px;
+  word-spacing: 30px;
 }

@@ -13,17 +13,17 @@ export class AppComponent {
   public cds: Cd[];
   constructor(){
     this.cds = [
-      new Cd("Word", "Here", 3.99, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music"),
-      new Cd("Word", "Here", 3.00, 0, "Music")
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0),
+      new Cd("Word", "Here", "Music", "9.99", 0)
     ];
   }
   cdWasSelected(clickedCd: Cd): void{
