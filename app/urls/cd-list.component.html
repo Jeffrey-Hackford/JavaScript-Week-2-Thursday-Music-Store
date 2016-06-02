@@ -1,14 +1,19 @@
+<edit-cd-details *ngIf="selectedCd" [cd]="selectedCd">
+</edit-cd-details>
+
+<div class="new">
+  <new-cd (onSubmitNewCd)="createCd($event)"></new-cd>
+</div>
+
 <div class="row">
   <select class=" dropMenu" (change)="onChange($event.target.value)">
     <option value="all">Store</option>
     <option value="purchased">Cart</option>
   </select>
 </div>
-<div class="new">
-  <new-cd (onSubmitNewCd)="createCd($event)"></new-cd>
+<div class="finalPrice">
+  <h1> {{ finalPrice }} </h1>
 </div>
-<edit-cd-details *ngIf="selectedCd" [cd]="selectedCd">
-</edit-cd-details>
 <div class="display">
   <cd-display *ngFor="#currentCd of cdList | purchased:filterPurchased:selectedCd"
     (click)="cdClicked(currentCd)"

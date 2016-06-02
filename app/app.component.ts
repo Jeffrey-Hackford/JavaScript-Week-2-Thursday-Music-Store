@@ -10,23 +10,15 @@ import { Cd } from './cd.model';
 })
 
 export class AppComponent {
+
   public cds: Cd[];
   constructor(){
     this.cds = [
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
-      new Cd("Word", "Here", "Music", "9.99", 0),
       new Cd("Word", "Here", "Music", "9.99", 0),
       new Cd("Word", "Here", "Music", "9.99", 0)
     ];
   }
   cdWasSelected(clickedCd: Cd): void{
-    console.log('parent', clickedCd);
+    // console.log('parent', clickedCd);
   }
 }

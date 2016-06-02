@@ -8,7 +8,7 @@ import { Cd } from './cd.model';
 })
 export class PurchasedPipe implements PipeTransform {
   transform(input: Cd[], args) {
-    console.log('selected cd: ', args[1]);
+    // console.log('selected cd: ', args[1]);
     var purchased = args[0];
     if(purchased === "purchased") {
       return input.filter((cd) => {

@@ -4,7 +4,9 @@ import { CdComponent } from './cd.component';
 import { NewCdComponent } from './new-cd.component';
 import { Cd } from './cd.model';
 import { PurchasedPipe } from './purchased.pipe';
-
+import { totalPrice } from './cd.component';
+console.log("test", totalPrice);
+var finalPrice = 0;
 
 @Component({
   selector: 'cd-list',
@@ -25,7 +27,6 @@ export class CdListComponent {
   }
 
   cdClicked(clickedCd: Cd): void {
-    console.log('child', clickedCd);
     this.selectedCd = clickedCd;
     this.onCdSelect.emit(clickedCd);
   }
@@ -37,5 +38,10 @@ export class CdListComponent {
 
   onChange(filterOption) {
     this.filterPurchased = filterOption;
+
+    for(var i = 0; i < totalPrice.length; i++) {
+      finalPrice += parseFloat(totalPrice[i]);
+      console.log("finalPrice = ", finalPrice);
+    }
   }
 }

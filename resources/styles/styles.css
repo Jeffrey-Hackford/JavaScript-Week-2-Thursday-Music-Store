@@ -5,6 +5,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+h2 {
+    font-size: 1.5vw;
+}
 
 .heading {
   min-width: 100%;
@@ -18,14 +21,12 @@ body {
   background: lightgray;
   border-radius: 0px 0px 100px 100px;
   font-family: 'Poiret One', cursive;
+  border-width: 5px;
+  border-color: #22bdf0;
+  border-style: inset;
+  background-color: #959595;
+  color: #fff;
 }
-/*.jumbotron{
-  width: 100%;
-  margin-left: auto!important;
-  margin-right: auto!important;
-  padding-left: 0px!important;
-  padding-right: 0px!important;
-}*/
 
 .selected {
   color: #22bdf0;
@@ -41,17 +42,16 @@ body {
   width: auto;
   float: left;
   height: auto;
-  margin: 15px;
-  margin-left: 35px;
-  max-width: 225px;
-  max-height: 260px;
+  margin: 10px;
+  margin-left: 10px;
+  max-width: 550px;
+  max-height: 300px;
   min-width: 225px;
-  min-height: 260px;
+  min-height: 300px;
   background-image: url("http://icons.iconseeker.com/png/fullsize/vinyl-record-icons/vinyl-turquoise-512.png");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  font-size: 2vw;
 }
  .album-contents{
    margin-left: 25px;
@@ -73,6 +73,7 @@ body {
 
 .cd-form{
   width: 80%;
+  margin-top: -8px;
   margin-left: 20%;
   margin-right: 50%;
 }
@@ -84,13 +85,13 @@ body {
 }
 .add-button{
   margin-top: 2px;
-  height: 191px;
+  height: 190px;
   background-color: #22bdf0;
   border-color: #22bdf0;
   color: #eee;
 }
 .add-button:hover{
-  height: 191px;
+  height: 190px;
   background-color: #51d1fb;
   border-color: #22bdf0;
 }
@@ -100,13 +101,15 @@ body {
   border-color: #22bdf0;
 }
 .new{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .cd-edit-form{
-  margin-left: 10%;
-  margin-right: 50%;
-  width: 80%;
+  margin-top: -10px;
+  margin-left: 10.55%;
+  margin-right: 49.5%;
+  margin-bottom: -6px;
+  width: 78.45%;
   border-color: #22bdf0;
 }
 .edit-head{
@@ -138,6 +141,7 @@ body {
   border-style: inset;
   margin-bottom: -49px;
   background-color: #fff;
+  margin-top: 2px;
 }
 
 .titleOpage{
